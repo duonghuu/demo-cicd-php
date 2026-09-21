@@ -5,6 +5,6 @@ $name = isset($_GET['name']) ? trim($_GET['name']) : 'World';
 
 echo json_encode([
     'status' => 'success',
-    'message' => "Hello, {$name}!",
+    'message' => "Hi there, {$name}!",
     'timestamp' => time()
 ], JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
